@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clerror</string>
+    <string name="ftext">Welcome To Our App</string>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+</resources>

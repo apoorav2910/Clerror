@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#99BED2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/blood"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Blood Group will be displayed Here"
+        android:textAlignment="center"
+        android:textColor="#235039"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+    </TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/nbtn3"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF4900"
+        > </Button>
+
+</LinearLayout>
+</ScrollView>

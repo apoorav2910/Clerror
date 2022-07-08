@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="#ade8f4">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Enter Your Details"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="#edc4b3"
+            android:hint="First Name"
+            android:id="@+id/fname"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lname"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/boxtheme"
+                android:hint="Last Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/boxtheme"
+                android:hint="Gender"
+                android:hapticFeedbackEnabled="true"
+                android:id="@+id/gender"
+                android:layout_margin="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:id="@+id/caste"
+                    android:backgroundTint="@color/boxtheme"
+                    android:hint="Caste"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/dob_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:drawableEnd="@drawable/calendar1"
+        android:hint="Select Date Of Birth"
+        android:textColorHint="@color/black"
+        android:onClick="dateBtn"
+        android:padding="12dp"
+        android:text=""
+        android:textColor="@color/black"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group"
+                android:layout_margin="8dp"
+                android:id="@+id/bgrp"
+                android:background="@color/boxtheme"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weight (In KG only)"
+                android:id="@+id/weight"
+                android:inputType="number"
+                android:layout_margin="8dp"
+                android:background="@color/boxtheme"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Height (In cm only)"
+                android:id="@+id/height"
+                android:inputType="number"
+                android:layout_margin="8dp"
+                android:background="@color/boxtheme"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/tm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="32dp"
+            android:drawableEnd="@drawable/tap"
+            android:text="TAP ME"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

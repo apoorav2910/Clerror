@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dee2ff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/pets">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thanks for checking out my App. Below are some of my contacts info."
+        android:textAlignment="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="32sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#5ef550"
+        android:drawableRight="@drawable/spotify"
+        android:text="SPOTIFY"
+        android:id="@+id/spotify"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#DC4283"
+        android:drawableRight="@drawable/instagram"
+        android:text="Instagram"
+        android:id="@+id/insta"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/linkedin"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#0288D1"
+        android:drawableRight="@drawable/linkedin1"
+        android:text="Linkedin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/gmail"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#E53935"
+        android:drawableRight="@drawable/gmail3"
+        android:text="Gmail" />
+</LinearLayout>
+</ScrollView>
