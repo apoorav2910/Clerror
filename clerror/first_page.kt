@@ -21,7 +21,7 @@ class first_page : AppCompatActivity() {
         val wlcm: TextView = findViewById(R.id.wlcm)
         val a = intent.extras?.getString("fname")
         val b = intent.extras?.getString("lname")
-        val disp_msg = "Welcome to my App ${a?.uppercase()} ${b?.uppercase()}. I am glad that you are trying this app. It is way too basic but I am still at my learning stage of Android development. I am currently pursuing BE-CSE from Chandigarh University. I have just completed my First Year."
+        val disp_msg = "Welcome to my App ${a?.uppercase()} ${b?.uppercase()}. I am glad that you are trying this app. It is way too basic but I am still at my learning stage of Android development. I am currently pursuing BE-CSE from Chandigarh University. I have just completed my Fifth semester of my course."
         wlcm.text = ("$disp_msg").toString()
         val fimg : ImageView = findViewById(R.id.fimg)
 
